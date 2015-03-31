@@ -1,10 +1,12 @@
 package com.example.root.leavenotrace;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.TextureView;
+import android.view.View;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -101,5 +103,10 @@ public class MainActivity extends ActionBarActivity {
     //Set graphs of personal metrics overtime based on past consumption and usage
     public void setPersonalMetricGraphs () {
 
+    }
+
+    public void accountSettings(View view) {
+        Intent intent = new Intent(this, AccountSettings.class);
+        startActivity(intent);
     }
 }

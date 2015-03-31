@@ -211,6 +211,7 @@
             android:layout_gravity="center_horizontal"
             android:id="@+id/accountButton"
             android:clickable="true"
+            android:onClick="accountSettings"
             android:layout_marginTop="25dp"/>
     </LinearLayout>
 
