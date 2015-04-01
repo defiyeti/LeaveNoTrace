@@ -20,6 +20,14 @@
             android:name=".AccountSettings"
             android:label="@string/title_activity_account_settings" >
         </activity>
+        <activity
+            android:name=".AddNewData"
+            android:label="@string/title_activity_add_new_data" >
+        </activity>
+        <activity
+            android:name=".UpdatePastUsage"
+            android:label="@string/title_activity_update_past_usage" >
+        </activity>
     </application>
 
 </manifest>

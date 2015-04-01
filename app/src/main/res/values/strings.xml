@@ -5,4 +5,6 @@
     <string name="title_activity_account_settings">AccountSettings</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_new_data">AddNewData</string>
+    <string name="title_activity_update_past_usage">UpdatePastUsage</string>
 </resources>
