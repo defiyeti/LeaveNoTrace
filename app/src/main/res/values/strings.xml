@@ -7,4 +7,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_add_new_data">AddNewData</string>
     <string name="title_activity_update_past_usage">UpdatePastUsage</string>
+    <string name="title_activity_log_in">LogIn</string>
+    <string name="title_activity_sign_up_one">SignUpOne</string>
+    <string name="title_activity_sign_up2">SignUp2</string>
+    <string name="title_activity_past_usage">PastUsage</string>
 </resources>

@@ -1,21 +1,20 @@
 package com.example.root.leavenotrace;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ToggleButton;
 
 
-public class AccountSettings extends ActionBarActivity {
+public class SignUp2 extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_account_settings);
+        setContentView(R.layout.activity_sign_up_two);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
     }
@@ -24,7 +23,7 @@ public class AccountSettings extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_account_settings, menu);
+        getMenuInflater().inflate(R.menu.menu_sign_up2, menu);
         return true;
     }
 
@@ -41,5 +40,10 @@ public class AccountSettings extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void main(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

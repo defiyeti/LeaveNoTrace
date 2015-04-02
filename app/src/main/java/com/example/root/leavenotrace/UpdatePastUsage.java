@@ -1,9 +1,11 @@
 package com.example.root.leavenotrace;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class UpdatePastUsage extends ActionBarActivity {
@@ -12,6 +14,8 @@ public class UpdatePastUsage extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_past_usage);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
     }
 
 
@@ -35,5 +39,8 @@ public class UpdatePastUsage extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void signUp(View view) {
     }
 }

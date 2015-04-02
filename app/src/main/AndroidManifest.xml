@@ -8,8 +8,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:name=".LogIn"
+            android:label="LeaveNoTrace" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +27,22 @@
         <activity
             android:name=".UpdatePastUsage"
             android:label="@string/title_activity_update_past_usage" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity" >
+        </activity>
+        <activity
+            android:name=".SignUpOne"
+            android:label="@string/title_activity_sign_up_one" >
+        </activity>
+        <activity
+            android:name=".SignUp2"
+            android:label="@string/title_activity_sign_up2" >
+        </activity>
+        <activity
+            android:name=".PastUsage"
+            android:label="@string/title_activity_past_usage" >
         </activity>
     </application>
 
