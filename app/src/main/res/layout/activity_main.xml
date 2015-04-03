@@ -32,11 +32,12 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="201dp"
+            android:layout_height="250dp"
             android:background="@drawable/round_green"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:layout_weight="1.35">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -44,7 +45,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Your CO2 Emissions:"
                 android:id="@+id/textView3"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="10dp"
                 android:textColor="#ffffff"
                 android:layout_marginLeft="5dp" />
 
@@ -76,16 +77,25 @@
                 android:textColor="#ffffff"
                 android:layout_marginLeft="5dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Insert CO2 graph here"
-                android:id="@+id/textView7"
-                android:layout_marginTop="25dp"
-                android:textColor="#ffffff"
-                android:layout_marginLeft="5dp" />
+            <com.androidplot.xy.XYPlot
+                android:id="@+id/mySimpleXYPlot"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+                androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+                androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+                androidPlot.graphWidget.marginTop="5dp"
+                androidPlot.graphWidget.marginLeft="5dp"
+                androidPlot.graphWidget.marginBottom="5dp"
+                androidPlot.graphWidget.marginRight="5dp"
+                androidPlot.graphWidget.gridLinePaint.color="#FFFFFF"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp" />
+
         </LinearLayout>
+
 
         <LinearLayout
             android:orientation="vertical"

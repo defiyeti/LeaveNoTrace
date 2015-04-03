@@ -62,80 +62,128 @@
         android:layout_marginTop="22dp"
         android:textColor="#ff000000" />
 
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:id="@+id/toggleButton4"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_below="@+id/textView32"
-        android:layout_marginTop="23dp"
-        android:textOff="Water"
-        android:textOn="Water"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button8"
-        android:layout_alignEnd="@+id/button8"
-        android:textAllCaps="false"
-        android:background="@drawable/round_water"
-        android:textColor="@android:color/white"
-        android:textSize="20dp" />
+        android:layout_marginTop="10dp">
 
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:id="@+id/toggleButton5"
-        android:layout_centerVertical="true"
-        android:checked="false"
-        android:textOff="Electricity"
-        android:textOn="Electricity"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/toggleButton4"
-        android:layout_alignEnd="@+id/toggleButton4"
-        android:textAllCaps="false"
-        android:background="@drawable/round_electricity"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
-        android:layout_marginTop="23dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/toggleButton4" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_water">
 
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:id="@+id/toggleButton6"
-        android:layout_below="@+id/toggleButton5"
-        android:layout_marginTop="23dp"
-        android:checked="false"
-        android:textOff="Natural Gas"
-        android:textOn="Natural Gas"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textAllCaps="false"
-        android:background="@drawable/round_natural_gas"
-        android:textColor="@android:color/white"
-        android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Water (thousand/gallons)"
+                android:id="@+id/textView16"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create Account"
-        android:id="@+id/button7"
-        android:layout_below="@+id/toggleButton6"
-        android:layout_marginTop="26dp"
-        android:onClick="main"
-        android:layout_alignRight="@+id/textView32"
-        android:layout_alignEnd="@+id/textView32"
-        android:layout_alignLeft="@+id/textView32"
-        android:layout_alignStart="@+id/textView32"
-        android:textAllCaps="false"
-        android:background="@drawable/round_green"
-        android:textColor="@android:color/white"
-        android:textSize="20dp" />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="#00CCFF"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_natural_gas">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Natural Gas (CCF)"
+                android:id="@+id/textView12"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_electricity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Electricity (kW/hr)"
+                android:id="@+id/textView18"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:id="@+id/button7"
+            android:layout_below="@+id/toggleButton6"
+            android:layout_marginTop="26dp"
+            android:onClick="main"
+            android:layout_alignRight="@+id/textView32"
+            android:layout_alignEnd="@+id/textView32"
+            android:layout_alignLeft="@+id/textView32"
+            android:layout_alignStart="@+id/textView32"
+            android:textAllCaps="false"
+            android:background="@drawable/round_green"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"

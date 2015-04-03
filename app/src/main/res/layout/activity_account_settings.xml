@@ -115,85 +115,138 @@
                 android:layout_centerHorizontal="true"
                 android:textColor="#ff000000" />
 
-            <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Water"
-                android:textOn="Water"
-                android:textOff="Water"
-                android:id="@+id/toggleButton"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:layout_below="@+id/textView6"
-                android:layout_marginTop="25dp"
-                android:checked="false"
-                android:layout_alignRight="@+id/view"
-                android:layout_alignEnd="@+id/view"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:textAllCaps="false"
-                android:background="@drawable/round_water"
-                android:textSize="20dp"
-                android:textColor="@android:color/white" />
+                android:id="@+id/linearLayout">
 
-            <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textOn="Electricity"
-                android:textOff="Electricity"
-                android:id="@+id/toggleButton2"
-                android:layout_below="@+id/toggleButton"
-                android:checked="false"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignRight="@+id/toggleButton"
-                android:layout_alignEnd="@+id/toggleButton"
-                android:textAllCaps="false"
-                android:background="@drawable/round_electricity"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"
-                android:textColor="@android:color/white" />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_water">
 
-            <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textOn="Natural Gas"
-                android:textOff="Natural Gas"
-                android:id="@+id/toggleButton3"
-                android:layout_below="@+id/toggleButton2"
-                android:checked="false"
-                android:layout_alignRight="@+id/editText4"
-                android:layout_alignEnd="@+id/editText4"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Water (thousand/gallons)"
+                        android:id="@+id/textView16"
+                        android:textColor="@android:color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch1"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="250dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#00CCFF"
+                        android:checked="false" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_natural_gas">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Natural Gas (CCF)"
+                        android:id="@+id/textView12"
+                        android:textColor="@android:color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="250dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_electricity">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Electricity (kW/hr)"
+                        android:id="@+id/textView18"
+                        android:textColor="@android:color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="5dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch3"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="250dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                android:id="@+id/view"
+                android:layout_below="@+id/button"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:textAllCaps="false"
-                android:background="@drawable/round_natural_gas"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"
-                android:textColor="@android:color/white" />
+                android:layout_marginTop="10dp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Update Account"
                 android:id="@+id/button"
-                android:layout_below="@+id/toggleButton3"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="15dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignRight="@+id/view"
-                android:layout_alignEnd="@+id/view"
                 android:textAllCaps="false"
                 android:background="@drawable/round_green"
                 android:textSize="20dp"
-                android:textColor="@android:color/white" />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@android:color/black"
-                android:id="@+id/view"
-                android:layout_above="@+id/button2"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="15dp"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/view"
+                android:layout_alignEnd="@+id/view" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -201,7 +254,7 @@
                 android:text="Edit Past Data"
                 android:id="@+id/button2"
                 android:layout_below="@+id/button"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:layout_alignRight="@+id/button"
                 android:layout_alignEnd="@+id/button"
                 android:layout_alignLeft="@+id/button"
@@ -209,7 +262,8 @@
                 android:textAllCaps="false"
                 android:background="@drawable/round_green"
                 android:textSize="20dp"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal" />
 
         </RelativeLayout>
 
