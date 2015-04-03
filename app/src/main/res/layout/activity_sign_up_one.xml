@@ -77,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Don&apos;t have an account?"
+        android:text="Already have an account?"
         android:id="@+id/textView27"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"

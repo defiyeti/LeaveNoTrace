@@ -96,11 +96,13 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginLeft="250dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
                 android:background="#00CCFF"
-                android:checked="false" />
+                android:checked="false"
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_toEndOf="@+id/textView16"
+                android:layout_marginLeft="50dp" />
 
         </RelativeLayout>
 
@@ -129,9 +131,11 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginLeft="250dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/textView12"
+                android:layout_toEndOf="@+id/textView12"
+                android:layout_marginLeft="100dp" />
 
         </RelativeLayout>
 
@@ -160,9 +164,11 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginLeft="250dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/textView18"
+                android:layout_toEndOf="@+id/textView18"
+                android:layout_marginLeft="100dp" />
 
         </RelativeLayout>
 

@@ -1,6 +1,7 @@
 package com.example.root.leavenotrace;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +9,11 @@ import android.view.MenuItem;
 import android.view.TextureView;
 import android.view.View;
 import android.widget.TextView;
+
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.GridLabelRenderer;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
 
 import org.w3c.dom.Text;
 
@@ -20,6 +26,38 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         setPersonalMetrics();
         setLocalMetrics();
+        GraphView graph = (GraphView) findViewById(R.id.graph);
+        GraphView graph1 = (GraphView) findViewById(R.id.graph2);
+        GraphView graph2 = (GraphView) findViewById(R.id.graph3);
+        GraphView graph3 = (GraphView) findViewById(R.id.graph4);
+        setGraphProperties(graph);
+        setGraphProperties(graph1);
+        setGraphProperties(graph2);
+        setGraphProperties(graph3);
+    }
+
+    private void setGraphProperties(GraphView graph) {
+        graph.getGridLabelRenderer().setGridStyle(GridLabelRenderer.GridStyle.NONE);
+        graph.getGridLabelRenderer().setHorizontalLabelsVisible(false);
+        graph.getGridLabelRenderer().setVerticalLabelsVisible(false);
+        LineGraphSeries<DataPoint> series1 = new LineGraphSeries<DataPoint>(new DataPoint[] {
+                new DataPoint(0, 5),
+                new DataPoint(2, 5),
+                new DataPoint(2, 3),
+                new DataPoint(3, 0),
+                new DataPoint(4, 2)
+        });
+        LineGraphSeries<DataPoint> series2 = new LineGraphSeries<DataPoint>(new DataPoint[] {
+                new DataPoint(0, 0),
+                new DataPoint(1, 0),
+                new DataPoint(2, 3),
+                new DataPoint(3, 5),
+                new DataPoint(4, 2)
+        });
+        series1.setColor(Color.BLACK);
+        series2.setColor(Color.GRAY);
+        graph.addSeries(series1);
+        graph.addSeries(series2);
     }
 
 
