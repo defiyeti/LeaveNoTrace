@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import javax.security.auth.login.LoginException;
+
 
 public class SignUpOne extends ActionBarActivity {
 
@@ -42,8 +44,13 @@ public class SignUpOne extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void signUpTwo(View view) {
-        Intent intent = new Intent(this, SignUp2.class);
+    public void signedUp(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void already(View view) {
+        Intent intent = new Intent(this, LogIn.class);
         startActivity(intent);
     }
 }

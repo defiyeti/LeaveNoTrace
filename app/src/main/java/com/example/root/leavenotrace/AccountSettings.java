@@ -1,5 +1,6 @@
 package com.example.root.leavenotrace;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -41,5 +42,15 @@ public class AccountSettings extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void back(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void edit(View view) {
+        Intent intent = new Intent(this, PastUsage.class);
+        startActivity(intent);
     }
 }

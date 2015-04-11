@@ -42,6 +42,11 @@ public class LogIn extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void logIn(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
     public void signUpOne(View view) {
         Intent intent = new Intent(this, SignUpOne.class);
         startActivity(intent);

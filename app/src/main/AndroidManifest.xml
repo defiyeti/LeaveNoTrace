@@ -37,10 +37,6 @@
             android:label="@string/title_activity_sign_up_one" >
         </activity>
         <activity
-            android:name=".SignUp2"
-            android:label="@string/title_activity_sign_up2" >
-        </activity>
-        <activity
             android:name=".PastUsage"
             android:label="@string/title_activity_past_usage" >
         </activity>

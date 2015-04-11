@@ -23,6 +23,8 @@ public class UpdatePastUsage extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_update_past_usage, menu);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Date Here");
         return true;
     }
 

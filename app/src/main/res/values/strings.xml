@@ -11,4 +11,5 @@
     <string name="title_activity_sign_up_one">SignUpOne</string>
     <string name="title_activity_sign_up2">SignUp2</string>
     <string name="title_activity_past_usage">PastUsage</string>
+    <string name="add_new_data">Add New Data</string>
 </resources>

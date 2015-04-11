@@ -28,11 +28,14 @@
                 android:inputType="textEmailAddress"
                 android:ems="10"
                 android:id="@+id/editText"
+                android:background="@drawable/text_box"
+                android:paddingStart="10dp"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_toEndOf="@+id/textView2"
-                android:layout_toRightOf="@+id/textView2" />
+                android:layout_alignRight="@+id/editText2"
+                android:layout_alignEnd="@+id/editText2"
+                android:layout_alignLeft="@+id/editText2"
+                android:layout_alignStart="@+id/editText2"
+                android:singleLine="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,11 +53,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/editText2"
-                android:layout_alignBottom="@+id/textView2"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignLeft="@+id/textView6"
-                android:layout_alignStart="@+id/textView6" />
+                android:background="@drawable/text_box"
+                android:paddingStart="10dp"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_alignRight="@+id/linearLayout"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -78,7 +85,10 @@
                 android:layout_alignLeft="@+id/editText4"
                 android:layout_alignStart="@+id/editText4"
                 android:password="true"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:background="@drawable/text_box"
+                android:paddingStart="10dp"
+                android:singleLine="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -102,7 +112,10 @@
                 android:layout_alignRight="@+id/editText2"
                 android:layout_alignEnd="@+id/editText2"
                 android:numeric="integer"
-                android:inputType="number" />
+                android:inputType="number"
+                android:background="@drawable/text_box"
+                android:paddingStart="10dp"
+                android:singleLine="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -149,10 +162,11 @@
                         android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
-                        android:layout_marginLeft="250dp"
+                        android:layout_marginLeft="50dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginRight="5dp"
-                        android:background="#00CCFF"
+                        android:layout_toRightOf="@+id/textView16"
+                        android:layout_toEndOf="@+id/textView16"
                         android:checked="false" />
 
                 </RelativeLayout>
@@ -182,8 +196,10 @@
                         android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
-                        android:layout_marginLeft="250dp"
+                        android:layout_marginLeft="100dp"
                         android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/textView12"
+                        android:layout_toEndOf="@+id/textView12"
                         android:layout_marginRight="5dp" />
 
                 </RelativeLayout>
@@ -213,8 +229,10 @@
                         android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
-                        android:layout_marginLeft="250dp"
+                        android:layout_marginLeft="100dp"
                         android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/textView18"
+                        android:layout_toEndOf="@+id/textView18"
                         android:layout_marginTop="10dp" />
 
                 </RelativeLayout>
@@ -246,7 +264,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignRight="@+id/view"
-                android:layout_alignEnd="@+id/view" />
+                android:layout_alignEnd="@+id/view"
+                android:onClick="back" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -263,6 +282,7 @@
                 android:background="@drawable/round_green"
                 android:textSize="20dp"
                 android:textColor="@android:color/white"
+                android:onClick="edit"
                 android:layout_gravity="center_horizontal" />
 
         </RelativeLayout>
