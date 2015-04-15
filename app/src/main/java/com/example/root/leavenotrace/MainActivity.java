@@ -34,6 +34,7 @@ public class MainActivity extends ActionBarActivity {
         setGraphProperties(graph1);
         setGraphProperties(graph2);
         setGraphProperties(graph3);
+        Connection con = new Connection();
     }
 
     private void setGraphProperties(GraphView graph) {

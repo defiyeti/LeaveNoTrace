@@ -11,12 +11,18 @@ import android.view.View;
 
 public class LogIn extends ActionBarActivity {
 
+    Connection connection;
+    String email = "derpy@test.com";
+    String password = "asdf1234";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+        connection = new Connection();
+        connection.getCSRFToken();
     }
 
 
@@ -43,6 +49,7 @@ public class LogIn extends ActionBarActivity {
     }
 
     public void logIn(View view) {
+        connection.logIn(email, password);
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
