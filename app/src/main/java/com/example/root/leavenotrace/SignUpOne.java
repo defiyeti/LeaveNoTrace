@@ -17,8 +17,6 @@ public class SignUpOne extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_one);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
     }
 
 
@@ -26,6 +24,8 @@ public class SignUpOne extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_sign_up_one, menu);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Sign Up");
         return true;
     }
 
@@ -36,10 +36,6 @@ public class SignUpOne extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }

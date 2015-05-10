@@ -36,13 +36,16 @@
             android:ems="10"
             android:id="@+id/editText5"
             android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:background="@drawable/text_box"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
             android:layout_toRightOf="@+id/textView16"
             android:layout_toEndOf="@+id/textView16"
             android:layout_marginLeft="10dp"
-            android:singleLine="true"
-            android:paddingStart="10dp"
-            android:background="@drawable/text_box"
-            android:layout_marginRight="5dp" />
+            android:paddingLeft="4dp" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -72,15 +75,16 @@
             android:textColor="@android:color/black"
 
             android:singleLine="true"
-            android:paddingStart="10dp"
             android:background="@drawable/text_box"
-            android:layout_alignTop="@+id/textView18"
+            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_toRightOf="@+id/textView18"
             android:layout_toEndOf="@+id/textView18"
             android:layout_marginLeft="70dp"
-            android:layout_marginRight="5dp" />
+            android:layout_marginRight="5dp"
+            android:paddingLeft="4dp" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -115,9 +119,9 @@
             android:layout_toEndOf="@+id/textView12"
             android:layout_marginLeft="70dp"
             android:singleLine="true"
-            android:paddingStart="10dp"
             android:background="@drawable/text_box"
-            android:layout_marginRight="5dp" />
+            android:layout_marginRight="5dp"
+            android:paddingLeft="4dp" />
     </RelativeLayout>
 
     <Button

@@ -67,7 +67,7 @@ public class MainActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Leave No Trace");
+        actionBar.setTitle("Your Usage");
         return true;
     }
 
@@ -78,9 +78,9 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_search) {
+            Intent intent = new Intent(this, AddNewData.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
